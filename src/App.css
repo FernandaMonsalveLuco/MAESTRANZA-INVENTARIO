@@ -1,0 +1,560 @@
+.contenedor-tabla {
+  padding: 1rem;
+}
+
+.titulo-tabla {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.tabla-productos th {
+  background-color: #fca311;
+  color: white;
+}
+
+.formulario-contenedor {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contenedor h2 {
+  margin-bottom: 1rem;
+  color: #14213d;
+}
+
+.formulario-producto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.formulario-producto input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.botones-formulario {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.boton-primario {
+  background-color: #fca311;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-secundario {
+  background-color: #727070;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.seccion-maestranza-inventario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.contenedor-seccion {
+  flex: 1 1 45%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 300px;
+}
+
+.contenedor-seccion h2 {
+  color: #14213d;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fca311;
+  padding-bottom: 0.3rem;
+}
+
+/* Botón Cerrar Sesión */
+
+.boton-cerrar-sesion {
+  background-color: #cc0202;
+  color: white;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-cerrar-sesion:hover {
+  background-color: #a10000;
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* espacio máximo entre los hijos */
+  align-items: center; /* centrar verticalmente */
+  padding: 1rem 2rem;
+  background-color: #14213d; /* ejemplo color oscuro */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Fondo y centrado */
+.login-page {
+  height: 100vh;
+  background-color: #14213d; /* azul oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cuadro blanco */
+.login-form {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título */
+.login-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #14213d;
+  text-align: center;
+}
+
+/* Labels */
+.login-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Inputs */
+.login-input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #fca311; /* naranja para foco */
+}
+
+/* Mensaje error */
+.login-error {
+  margin-top: 10px;
+  color: #cc0202; /* rojo */
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Botón */
+.login-button {
+  margin-top: 30px;
+  background-color: #fca311; /* naranja */
+  color: #14213d;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #cc8b05;
+}
+.buscador-contenedor {
+  margin-top: 20px; /* separa 20px del header */
+  text-align: center; /* para centrar el input */
+}
+
+.seccion-maestranza-inventario .contenedor-seccion > form,
+.seccion-maestranza-inventario .contenedor-seccion > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nav-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  color: #fca311; /* tu color amarillo naranja */
+}
+
+.buscador-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buscador-input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.nav-links {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  background-color: #14213d; /* color azul oscuro */
+  border-radius: 8px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.nav-link-btn {
+  color: white;
+  background-color: #fca311; /* color amarillo mostaza */
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link-btn:hover {
+  background-color: #cc8200; /* tono más oscuro del amarillo */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Contenedor y formulario */
+.formulario-contenedor {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.formulario-producto input[type="text"],
+.formulario-producto input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 15px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-producto input[type="text"]:focus,
+.formulario-producto input[type="number"]:focus {
+  border-color: #14213d; /* color azul fuerte */
+  outline: none;
+}
+
+/* Botones */
+.boton-primario {
+  background-color: #14213d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton-primario:hover {
+  background-color: #0f172a;
+}
+
+.boton-secundario {
+  background-color: #fca311;
+  color: #14213d;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton-secundario:hover {
+  background-color: #d18a00;
+}
+
+/* Listas de productos para kits */
+.lista-disponibles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.lista-kit {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.item-kit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-kit:last-child {
+  border-bottom: none;
+}
+
+.item-kit span {
+  flex: 1;
+}
+
+.item-kit input[type="number"] {
+  width: 70px;
+  margin: 0 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Títulos dentro del formulario */
+.formulario-producto h3 {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #14213d;
+}
+
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-contenedor {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+}
+
+.boton-rojo {
+  background-color: #cc0202;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.boton-rojo:hover {
+  background-color: #a60000;
+}
+.contenedor-informes {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu-informes button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.seccion-informe {
+  margin-top: 20px;
+}
+
+.filtros-informe label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.filtros-informe input {
+  margin-left: 5px;
+  padding: 4px 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.notificaciones-panel {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 15px;
+  margin: 20px auto;  /* centrado horizontal */
+  border-radius: 10px;
+  font-size: 15px;
+  max-width: 600px;
+}
+
+.alerta-item {
+  margin-bottom: 8px;
+  list-style: disc inside;
+}
+
+/* ============================= */
+/* Contenedor principal          */
+/* ============================= */
+.p-4 {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ============================= */
+/* Títulos y Encabezados         */
+/* ============================= */
+h2, h3 {
+  color: #14213d;
+  margin-bottom: 1rem;
+}
+
+/* ============================= */
+/* Inputs y Filtros              */
+/* ============================= */
+.input {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+  border-color: #fca311;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+/* ======================== */
+/* BOTONES DE INFORMES      */
+/* ======================== */
+.botones-informes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.botones-informes button {
+  background-color: #14213d;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botones-informes button:hover {
+  background-color: #0f172a;
+}
+
+.botones-informes .boton-pdf {
+  background-color: #cc0202;
+}
+
+.botones-informes .boton-pdf:hover {
+  background-color: #a10000;
+}
+
+.botones-informes .boton-excel {
+  background-color: #fca311;
+  color: #14213d;
+}
+
+.botones-informes .boton-excel:hover {
+  background-color: #cc8b05;
+}
