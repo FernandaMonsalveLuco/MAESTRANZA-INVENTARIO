@@ -3,9 +3,8 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-// Reemplaza los siguientes datos con los de tu proyecto Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyC_XoUZ9eX5kPhybqhtbOdlbuKtCnj336w",
+  //apiKey: "AIzaSyC_XoUZ9eX5kPhybqhtbOdlbuKtCnj336w",
   authDomain: "maestranzainventario-f2fa7.firebaseapp.com",
   projectId: "maestranzainventario-f2fa7",
   storageBucket: "maestranzainventario-f2fa7.firebasestorage.app",
@@ -21,5 +20,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-// EXPORTAR AMBOS
 export { db, auth };
